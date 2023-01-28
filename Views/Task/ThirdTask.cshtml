@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Third Task";
+}
+
+<div class="text-left">
+    <form asp-controller="Task" asp-action="ThirdTask" method='post'>
+                <label>Name:</label><br />
+                <input name="name" /><br />
+                <label>Age:</label><br />
+                <input type="number" name="age" min="0" max="120" /><br />
+                <label>Money:</label><br />
+                <input type="number" name="money" min="0" step="0.01" /><br />
+                <button type="submit">Confirm</button>
+    </form>";
+    <div class="text-center">
+        <h2>Name: @ViewData["name"]</h2>
+        <h2>Age: @ViewData["age"]</h2>
+        <h2>Money: @ViewData["money"]</h2>
+    </div>
+</div>
+
+
+
