@@ -37,7 +37,9 @@ namespace Lab7_KazanovAlexandr.Controllers
             return View();
         }
 
-        public IActionResult ThirdTask(string name, int age, decimal money)
+        [HttpGet]
+        [HttpPost]
+        public IActionResult ThirdTask(string name, int age, double money)
         {
             ViewData["name"] = name;
             ViewData["age"] = age;
